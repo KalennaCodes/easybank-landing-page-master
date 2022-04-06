@@ -2,39 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>Easybank landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!--NAV BAR SECTION-->
+<nav class="navbar">
+<img src="./images/logo.svg" alt="easy bank logo" class="logo">
+<div class="navbar_toggle" id="mobile-menu">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+<ul class="navbar_menu">
+  <li class="nav_links"><a href="#Home">Home</a></li>
+  <li class="nav_links"><a href="#About">About</a></li>
+  <li class="nav_links"><a href="#About">About</a></li>
+  <li class="nav_links"><a href="#Contact">Contact</a></li>
+  <li class="nav_links"><a href="#Blog">Blog</a></li>
+  <li class="nav_links"><a href="#Careers">Careers</a></li>
+</ul>
+  <button class="btn-nav">Request Invite</button>
+</nav>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
+<!-- HEADER SECTION-->
+<main id="Home">
+<section class="header">
+  <h1 class="main_tag">Next generation digital banking</h1>
 
-  Request Invite
+  <p class="header_paragraph">Take your financial life online. Your Easybank account will be a one-stop-shop 
+  for spending, saving, budgeting, investing, and much more.</p>
 
+  <button class="btn-header">Request Invite</button>
+</section>
 
+</main>
 
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
-
-
-
+<!-- ABOUT US SECTION -->
+<section id="About">
   Why choose Easybank?
 
   We leverage Open Banking to turn your bank account into your financial hub. Control 
@@ -55,9 +66,10 @@
   Open API
   Manage your savings, investments, pension, and much more from one account. Tracking 
   your money has never been easier.
+</section>
+ <!--BLOG SECTION--> 
 
-  
-
+<section id="Blog">
   Latest Articles
 
   By Claire Robinson
@@ -79,9 +91,10 @@
   Our invite-only Beta accounts are now live!
   After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
   It’s easy to request an invite through the site ...
+</section>
 
-  
-
+ <!--FOOTER SECTION--> 
+<footer>
   About Us
   Contact
   Blog
@@ -95,7 +108,8 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Kalenna Codes</a>.
   </div>
+</footer>
 </body>
 </html>
