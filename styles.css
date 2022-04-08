@@ -22,7 +22,17 @@ li {
 h1, h2, h3, h4, h5, h6 {
     color: var(--darkBlue);
     font-family: public sans;
-    font-weight: 500;
+    font-weight: 300;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--cyan);
 }
 /* NAV SECTION */
 .navbar {
@@ -121,6 +131,38 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     min-height: 400px;
 }
+
+.phone-pic {
+    background-image: url(./images/image-mockups.png);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-header {
+    text-align: center;
+    min-height: 400px;
+    
+}
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.header_paragraph {
+    padding: 0 20%;
+    line-height: 1.5rem;
+    font-family: public sans;
+    color: hsl(233, 8%, 62%);
+    font-weight: 100;
+}
+
+
+
+
+/* ABOUT US SECTION */
+
+#About {
+    text-align: center;
+    background-color: var(--lGreyBlue)
 }
