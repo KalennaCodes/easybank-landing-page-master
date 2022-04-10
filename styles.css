@@ -32,7 +32,7 @@ button {
     outline: none;
     border: none;
     color: white;
-    background-color: var(--cyan);
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 }
 /* NAV SECTION */
 .navbar {
@@ -59,7 +59,7 @@ button {
 }
 
 .logo {
-    margin-left: 3%;
+    margin-left: 5%;
 }
 
 .btn-nav {
@@ -130,6 +130,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 400px;
+    
 }
 
 .phone-pic {
@@ -137,17 +138,18 @@ button {
     min-height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -150px;
 }
 
 .section-header {
     text-align: center;
     min-height: 400px;
-    
+    padding-top: 2%;
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: clamp(3rem, 7vw, 4rem);
     padding-bottom: 10px;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 .header_paragraph {
     padding: 0 20%;
@@ -157,12 +159,45 @@ h1 {
     font-weight: 100;
 }
 
+.btn-header {
+    margin-top: 20px;
+}
+/* HEADER SECTION MOBILE */
 
-
+@media screen and (min-width: 780px) {
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header_paragraph {
+        padding: 0;
+    }
+    .background-img {
+        background-image: url(./images/bg-intro-desktop.svg);
+        background-size: cover;
+        min-height: 400px;
+        width: 100%;
+    }
+    .phone-pic {
+        background-position-y: 50px;
+    }
+    .section-header {
+        align-self: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 5%;
+    }
+}
 
 /* ABOUT US SECTION */
 
 #About {
     text-align: center;
     background-color: var(--lGreyBlue)
+}
+
+.about_paragraph h2 {
+    padding: 70px;
+    padding-bottom: 20px;
+    font-size: clamp(2rem, 7vw, 3rem);
 }
