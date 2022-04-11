@@ -6,6 +6,7 @@
     --lGreyBlue: hsl(220, 16%, 96%);
     --grey: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);
+    font-family: public sans;
 }
 
 
@@ -188,7 +189,7 @@ h1 {
         width: 100%;
     }
     .phone-pic {
-        background-position-y: 5px;
+        background-position-y: -15px;
     }
     .section-header {
         align-self: center;
@@ -360,18 +361,19 @@ footer {
     .logo_footer {
         padding-bottom: 40px;
      }
-     .socials {
-        
+     .footer-column {
+         
      }
      .footer_links {
          width: 33.3%;
          align-self: center;
          display: flex;
-         flex-direction: row;
+         flex-direction: column;
          padding-top: 30px;
      }
+    
      .footer-section-button {
-         width: 33.3;
+         width: 33.3%;
          align-self: center;
      }
 }
